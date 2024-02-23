@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" conent="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devika S Kumar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpeg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Engineer in Training | Passionate about IoT & Front-End</p>
+            <h1>Hey, I'm Devika S Kumar</h1>
+        </div>
+;
+    </div>
+<!------------about------------>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.JPG">
+            </div>
+            <div class="about-col-2"></div>
+            <h1 class="sub-title">About Me</h1>
+            <p>Hello! I'm Devika S Kumar, an 18-year-old Electronics and Communication Engineering student currently based in Muvattupuzha, Kerala.<br> I'm in my first year at Mar Athanasius College of Engineering, where I'm immersing myself in the world of technology and innovation.
+
+               With a keen interest in both communication and technology, I've found myself exploring various avenues to expand my skills and knowledge.<br> I'm proficient in communication and public speaking, skills that I've honed through academic projects and extracurricular activities. Additionally, my knowledge extends to programming languages such as C, Java, and Kotlin, which I'm eager to apply in practical settings.
+                
+                Outside of academics, I'm actively involved in the IoT Club, where I'm passionate about exploring the intersection of technology and connectivity.<br> I'm currently delving into front-end development, finding joy in creating engaging user experiences and interfaces.
+                
+                My curiosity extends beyond technology; I'm also an avid participant in Model United Nations (MUNs), where I've had the opportunity to enhance my research, communication, and leadership skills. I believe in the power of collaboration and the importance of effective communication in driving positive change.
+                
+                In my free time, you'll often find me immersed in a good book, as I have a deep love for reading.<br> Whether it's fiction, non-fiction, or exploring new topics, I find joy in expanding my knowledge and perspectives through literature.
+                
+                When I'm not dancing, reading, or engaged in academic pursuits, I'm actively seeking new opportunities for growth and learning.<br> Looking ahead, I aspire to continue my journey of learning and contribute meaningfully to the field of Electronics and Communication Engineering.
+                
+                Thank you for taking the time to learn a bit about me. I'm always open to new opportunities and connections, so feel free to reach out!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-linksonclick=" onclick="opentab('experience')">Experience  </p>
+                    <p class="tab-linksonclick="onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Technical Skills</span><br>Programming languages like C, Kotlin and Java</li>
+                        <li><span>Communication Skills</span><br>Public Speaking</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Technical Skills</span><br>Programming languages like C, Kotlin and Java</li>
+                        <li><span>Communication Skills</span><br>Public Speaking</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2009-2023</span><br>Vimalagiri International School, Vazhapilly, Muvattuuzha</li>
+                        <li><span>2023-present</span><br>Mar Athanasius College of Engineering, Kothamangalam</li>
+                    </ul>
+                </div>
+        </div>
+    
+    </div>
+    <!-----------services---------->
+    
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                
+            </div>
+        </div>
+    </div>
+     .container   
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+    for (tablink of tablinks)
+        tablink.classList.remove("active-link");
+    for (tabcontent of tabcontents)
+        tabcontent.classList.remove("active-tab");
+
+    document.getElementById(tabname).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
+}
+
+    
+    event.currentTarget.classList.add("active-link");
+</script>
+</body>
+</html>
